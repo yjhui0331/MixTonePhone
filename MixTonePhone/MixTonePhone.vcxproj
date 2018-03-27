@@ -30,7 +30,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140_xp</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Static</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -44,7 +44,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v140_xp</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Static</UseOfMfc>
   </PropertyGroup>
@@ -190,6 +190,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="define.h" />
+    <ClInclude Include="global.h" />
     <ClInclude Include="MixTonePhone.h" />
     <ClInclude Include="MixTonePhoneDlg.h" />
     <ClInclude Include="resource.h" />
@@ -198,6 +199,7 @@
     <ClInclude Include="utf.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="global.cpp" />
     <ClCompile Include="MixTonePhone.cpp" />
     <ClCompile Include="MixTonePhoneDlg.cpp" />
     <ClCompile Include="stdafx.cpp">
