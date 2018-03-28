@@ -26,9 +26,14 @@ using namespace std;
 // #define SIP_PORT    5060
 
 
-#define SIP_DOMAIN	_T("wh82011.f3322.net")
-#define SIP_USER	_T("1003")
-#define SIP_PASSWD	_T("1234")
+// #define SIP_DOMAIN	_T("wh82011.f3322.net")
+// #define SIP_USER	_T("1003")
+// #define SIP_PASSWD	_T("1234")
+// #define SIP_PORT    5060
+
+#define SIP_DOMAIN	_T("192.168.0.56")
+#define SIP_USER	_T("1000")
+#define SIP_PASSWD	_T("1000")
 #define SIP_PORT    5060
 
 
