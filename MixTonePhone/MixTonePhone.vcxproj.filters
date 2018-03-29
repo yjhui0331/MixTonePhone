@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{a48c3a7e-4adf-47c4-9357-70cccfcad441}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MixTonePhone.h">
@@ -39,6 +42,12 @@
     <ClInclude Include="global.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="VideoDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SettingsDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MixTonePhone.cpp">
@@ -54,6 +63,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="global.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingsDlg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -77,5 +92,13 @@
     <Image Include="res\Toolbar256.bmp">
       <Filter>资源文件</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\pjproject\lib\libpjproject-i386-Win32-vc14-Release.lib">
+      <Filter>lib</Filter>
+    </Library>
+    <Library Include="..\pjproject\lib\libpjproject-i386-Win32-vc14-Debug.lib">
+      <Filter>lib</Filter>
+    </Library>
   </ItemGroup>
 </Project>

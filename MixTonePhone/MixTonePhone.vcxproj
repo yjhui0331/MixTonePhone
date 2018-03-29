@@ -194,14 +194,17 @@
     <ClInclude Include="MixTonePhone.h" />
     <ClInclude Include="MixTonePhoneDlg.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="SettingsDlg.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="utf.h" />
+    <ClInclude Include="VideoDlg.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="global.cpp" />
     <ClCompile Include="MixTonePhone.cpp" />
     <ClCompile Include="MixTonePhoneDlg.cpp" />
+    <ClCompile Include="SettingsDlg.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -209,6 +212,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="utf.cpp" />
+    <ClCompile Include="VideoDlg.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="MixTonePhone.rc" />
@@ -221,7 +225,16 @@
     <Image Include="res\Toolbar.bmp" />
     <Image Include="res\Toolbar256.bmp" />
   </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\pjproject\lib\libpjproject-i386-Win32-vc14-Debug.lib" />
+    <Library Include="..\pjproject\lib\libpjproject-i386-Win32-vc14-Release.lib" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="MixTonePhone.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>
