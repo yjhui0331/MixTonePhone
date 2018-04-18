@@ -4,6 +4,8 @@
 
 #include <stdio.h>
 #include "global.h"
+//#include "CXMLFile\XMLFile.h"
+#include "..\CXMLFile\XMLFile.h"
 
 using namespace std;
 
@@ -30,6 +32,11 @@ using namespace std;
 // #define SIP_USER	_T("1003")
 // #define SIP_PASSWD	_T("1234")
 // #define SIP_PORT    5060
+
+// #define SIP_DOMAIN	_T("192.168.0.2")
+// #define SIP_USER	_T("1003")
+// #define SIP_PASSWD	_T("1003")
+// #define SIP_PORT    7080
 
 // #define SIP_DOMAIN	_T("192.168.0.56")
 // #define SIP_USER	_T("1000")

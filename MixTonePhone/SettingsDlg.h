@@ -20,4 +20,11 @@ protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV Ö§³Ö
 
 	DECLARE_MESSAGE_MAP()
+public:
+	int m_nNumber;
+	CString m_strPassword;
+	CString m_strServerAddress;
+	int m_nPort;
+	afx_msg void OnBnClickedOk();
+	virtual BOOL OnInitDialog();
 };

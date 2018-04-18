@@ -16,6 +16,9 @@
     <Filter Include="lib">
       <UniqueIdentifier>{a48c3a7e-4adf-47c4-9357-70cccfcad441}</UniqueIdentifier>
     </Filter>
+    <Filter Include="XMLFile">
+      <UniqueIdentifier>{d6fafde6-a570-4593-991f-b89087414926}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MixTonePhone.h">
@@ -48,6 +51,9 @@
     <ClInclude Include="SettingsDlg.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\CXMLFile\XMLFile.h">
+      <Filter>XMLFile</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MixTonePhone.cpp">
@@ -70,6 +76,9 @@
     </ClCompile>
     <ClCompile Include="SettingsDlg.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CXMLFile\XMLFile.cpp">
+      <Filter>XMLFile</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
