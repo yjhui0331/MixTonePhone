@@ -68,14 +68,25 @@ BOOL CSettingsDlg::OnInitDialog()
 	CString settingFile = _T("");
 	settingFile.Format(_T("%s.xml"), fileName);
 
+	CString settingFilePath = _T("");
+	settingFilePath.Format(_T("%s\\%s"), strpathExe, settingFile);
+
 	CXMLFile xmlFile;
-	if (xmlFile.LoadFromFile(settingFile.GetBuffer()))//加载xml文件
+	if (xmlFile.LoadFromFile(settingFilePath.GetBuffer()))//加载xml文件
 	{
 		
 	}
 	else
 	{
-		xmlFile.SaveToFile(settingFile.GetBuffer());
+		// 打开文件失败创建新文件 [4/18/2018 yangjianhui]
+		CXMLElement* xmlRoot = new CXMLElement();
+		xmlRoot->Create(_T("XML:ROOT"), XET_TAG);
+		CXMLElement* xmlContacts = new CXMLElement();
+		xmlContacts->Create(_T("Account"), XET_TAG);
+		xmlRoot->AppendChild(xmlContacts);
+		xmlFile.SetRoot(xmlRoot);
+
+		xmlFile.SaveToFile(settingFilePath.GetBuffer());
 	}
 
 	GetDlgItem(IDC_NUMBER_EDIT)->SetWindowText(_T(""));
