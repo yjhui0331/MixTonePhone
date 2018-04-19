@@ -189,7 +189,8 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\CXMLFile\XMLFile.h" />
+    <ClInclude Include="..\pugixml\include\pugiconfig.hpp" />
+    <ClInclude Include="..\pugixml\include\pugixml.hpp" />
     <ClInclude Include="define.h" />
     <ClInclude Include="global.h" />
     <ClInclude Include="MixTonePhone.h" />
@@ -202,10 +203,6 @@
     <ClInclude Include="VideoDlg.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\CXMLFile\XMLFile.cpp">
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
     <ClCompile Include="global.cpp" />
     <ClCompile Include="MixTonePhone.cpp" />
     <ClCompile Include="MixTonePhoneDlg.cpp" />

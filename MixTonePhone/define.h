@@ -3,9 +3,9 @@
 
 
 #include <stdio.h>
-#include "global.h"
-//#include "CXMLFile\XMLFile.h"
-#include "..\CXMLFile\XMLFile.h"
+#include <string>
+
+#include "..\pugixml\include\pugixml.hpp"
 
 using namespace std;
 
@@ -21,11 +21,12 @@ using namespace std;
 
 #define THIS_FILE	"APP"
 
-
+/*
 #define SIP_DOMAIN	_T("192.168.50.200")
 #define SIP_USER	_T("5010")
 #define SIP_PASSWD	_T("5010")
 #define SIP_PORT    5060
+*/
 
 
 // #define SIP_DOMAIN	_T("wh82011.f3322.net")
@@ -51,5 +52,14 @@ typedef struct tagMT_INCOMINGCALL
 	pjsip_rx_data *rdata;
 }MT_INCOMINGCALL, *LPMT_INCOMINGCALL;
 
+
+typedef struct tagMT_ACCOUNT
+{
+	int nNumber;
+	CString strUserName;
+	CString strPassword;
+	CString strDoMain;
+	int nPort;
+}MT_ACCOUNT, *LPMT_ACCOUNT;
 
 #endif

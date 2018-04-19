@@ -24,7 +24,12 @@ public:
 	int m_nNumber;
 	CString m_strPassword;
 	CString m_strServerAddress;
+	CString m_strSettingFilePath;
 	int m_nPort;
 	afx_msg void OnBnClickedOk();
 	virtual BOOL OnInitDialog();
+
+	CString m_strUserName;
+
+	BOOL m_bExist;
 };
