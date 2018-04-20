@@ -90,6 +90,9 @@
     <None Include="res\MixTonePhone.rc2">
       <Filter>资源文件</Filter>
     </None>
+    <None Include="res\wave2.bin">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="res\MixTonePhone.ico">
@@ -101,6 +104,24 @@
     <Image Include="res\Toolbar256.bmp">
       <Filter>资源文件</Filter>
     </Image>
+    <Image Include="res\video.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\icon1.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\icon2.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bitmap2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bitmap3.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Library Include="..\pjproject\lib\libpjproject-i386-Win32-vc14-Release.lib">
@@ -109,5 +130,13 @@
     <Library Include="..\pjproject\lib\libpjproject-i386-Win32-vc14-Debug.lib">
       <Filter>lib</Filter>
     </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="res\ringin.wav">
+      <Filter>资源文件</Filter>
+    </Media>
+    <Media Include="res\ringout.wav">
+      <Filter>资源文件</Filter>
+    </Media>
   </ItemGroup>
 </Project>

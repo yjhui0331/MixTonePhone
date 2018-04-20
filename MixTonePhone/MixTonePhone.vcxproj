@@ -221,15 +221,26 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="res\MixTonePhone.rc2" />
+    <None Include="res\wave2.bin" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\bitmap2.bmp" />
+    <Image Include="res\bitmap3.bmp" />
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\icon2.ico" />
     <Image Include="res\MixTonePhone.ico" />
     <Image Include="res\Toolbar.bmp" />
     <Image Include="res\Toolbar256.bmp" />
+    <Image Include="res\video.ico" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="..\pjproject\lib\libpjproject-i386-Win32-vc14-Debug.lib" />
     <Library Include="..\pjproject\lib\libpjproject-i386-Win32-vc14-Release.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="res\ringin.wav" />
+    <Media Include="res\ringout.wav" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

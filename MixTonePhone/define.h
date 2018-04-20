@@ -5,6 +5,9 @@
 #include <stdio.h>
 #include <string>
 
+#pragma comment(lib, "winmm.lib")
+#include <Mmsystem.h>
+
 #include "..\pugixml\include\pugixml.hpp"
 
 using namespace std;
@@ -43,6 +46,24 @@ using namespace std;
 // #define SIP_USER	_T("1000")
 // #define SIP_PASSWD	_T("1000")
 // #define SIP_PORT    5060
+
+
+enum MT_LINE_STATE
+{ 
+	/*
+	#define DISP_STATUS_UNREGISTER							0x00
+	#define DISP_STATUS_IDLE								0x01
+	#define DISP_STATUS_RINING								0x02
+	#define DISP_STATUS_CALLING								0x03
+	#define DISP_STATUS_TALKING								0x04
+	#define DISP_STATUS_FORBIDDEN							0x05
+	#define DISP_STATUS_HOLDING								0x06
+	#define DISP_STATUS_OFFLINE								0x07
+	#define DISP_STATUS_OFFHOOK								0x08
+	*/
+	DISP_STATUS_IDLE,
+	MSIP_SRTP 
+};
 
 
 typedef struct tagMT_INCOMINGCALL
